@@ -43,6 +43,7 @@ end
        puts "#{index}. #{ls.artist.name} - #{ls.name} - #{ls.genre.name}"
      end
    end
+   
   def list_artists
      Artist.all.sort{|a,b| a.name <=> b.name}.each.with_index(1) do |la, index|
        puts "#{index}. #{la.name}"
